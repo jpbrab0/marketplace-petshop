@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding: 0;
+    border: none;
+}
+body{
+    background-color: #f0f0f5;
+    -webkit-font-smoothing:antialiased;
+}
+/*Header*/
+header{
+    background-color: salmon;
+    display: flex;
+    padding: 13px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: sans-serif;
+}
+header .links a{
+    
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+header .links a + a{
+    margin-left: 13px;
+}
+
+.top{
+    width: 100%;
+    margin: 52px auto;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.top img{
+    width: 30%;
+}
+.top .description h1{
+    font-weight: bold;
+    font-size: 38px;
+    width: 75%;
+}
+.top .description p{
+    width: 80%;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.top .description button,
+header .links button{
+    display:flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 32px;
+    padding: 16px;
+    cursor: pointer;
+    background-color:rgb(100, 182, 19) ;
+    border-radius:0 13px 0 13px ;
+    margin-left:5px ;
+    color: white;
+    transition: 0.2s;
+    outline: none;
+    
+}
+.top .description i,
+header .links button i{
+    margin-right: 13px;
+}
+.top .description button:hover,
+header .links button:hover{
+    color: #000;
+    background-color: greenyellow;
+    opacity: 90%;
+}
+.petshops{
+    height: 150px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    gap:24px;
+
+    font-family: sans-serif;
+}
+.petshop{
+    cursor: pointer;
+    background-color: rgb(233, 233, 233);
+    padding: 23px;
+    margin: 32px auto;
+    transition: 0.2s;
+}
+.petshop:hover{
+    border:3px solid salmon;
+    border-radius: 13px;
+}
+.petshop img{
+    max-width: 300px;
+    border-radius: 13px;
+}
+.petshop .description{
+    margin: 32px auto;
+}
+/*CADASTRO*/
+form{
+    margin: 32px auto;
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+}
+form h3{
+    color: #777;
+    margin-bottom:23px ;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+.details{
+    padding: 32px;
+}
+.details .item{
+    margin-left: 23px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+}
+
+.details .item div:nth-child(1){
+    color: #777;
+    margin-bottom:23px ;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+.details .item textarea {
+    width: 100%;
+    outline: none;
+    color: #777;
+    font-weight: bold;
+}
+.details .item:last-child{
+    border:none;
+}
+form p{
+    margin-left: 23px;
+}
+input{
+    width: 100%;
+    outline: none;
+    color: #555555;
+    font-weight: bold;
+    font-size: 18px;
+}
+select{
+    outline: none;
+    width: 60%;
+    border: none;
+}
+form .details button{
+    width: 90%;
+    padding: 13px;
+    background-color: #7159c1;
+    color: #fff;
+    margin:23px;
+}

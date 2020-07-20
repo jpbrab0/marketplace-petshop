@@ -1,0 +1,52 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Cadastro do petshop</title>
+</head>
+<body>
+    <header>
+        <h1>Marketplace</h1>
+        <div class="links">
+            <a href="/home">Voltar</a>
+        </div>
+    </header>
+    <form class="card" method="POST" action="/home">
+        <section class="avatar" style="background:url(https://source.unsplash.com/collection/9781517/500x500) no-repeat center center /cover"></section>
+        <section class="details">
+
+            <h3>Novo Petshop</h3>
+
+            <div class="item">
+                <div>Avatar URL</div>
+                <div>
+                    <input type="url" name="avatar_url" placeholder="http://">
+                </div>
+            </div>
+            <div class="item">
+                <div>Nome</div>
+                <div>
+                    <input type="text" name="name" placeholder="Nome do petshop">
+                </div>
+            </div>
+            <div class="item">
+                <div>Descrição</div>
+                <div>
+                    <textarea name="description" cols="30" rows="10" placeholder="Uma breve descrição." required="required"></textarea>
+                </div>
+            </div>
+            <div class="item">
+                <div>Horário</div>
+                <div><input type="text" name="hour" placeholder="00:00 as 00:00" required="required"></div>
+            </div>
+            <div class="item">
+                <div>E-mail</div>
+                <div><input type="email" name="email"></div>
+            </div>
+            <button type="submit">Salvar</button>
+
+        </section>
+    </form>
+    <script src="/script/location.js"></script>
+</body>

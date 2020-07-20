@@ -1,0 +1,27 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <title>Petshops</title>
+</head>
+<body>
+    <header>
+        <h1>Marketplace</h1>
+        <div class="links">
+            <a href="/home">Voltar</a>
+        </div>
+    </header>
+    <section class="petshops">
+        {% for petshop in petshops %}
+            <div class="petshop">
+                <img src="{{petshop.avatar_url}}" alt="">
+                <div class="description">
+                    <h2>{{petshop.name}}</h2>
+                    <p>{{petshop.uf}}</p>
+                    <p>{{petshop.city}}</p>
+
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+</body>
