@@ -144,7 +144,7 @@ header .links button:hover{
 .details .item:last-child{
     border:none;
 }
-form p{
+.card p{
     margin-left: 23px;
 }
 input{
@@ -159,7 +159,7 @@ select{
     width: 60%;
     border: none;
 }
-form .details button{
+.card .details button{
     width: 90%;
     padding: 13px;
     background-color: #7159c1;

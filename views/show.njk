@@ -1,5 +1,14 @@
 <link rel="stylesheet" href="/styles/styles.css">
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<header>
+    <h1>Marketplace</h1>
+    <div class="links">
+        <a href="/petshops">
+            <button>
+                <i class="material-icons">keyboard_tab</i>Voltar</button>
+        </a>
+    </div>
+</header>
 <section class="card">
         <section class="avatar" style="background:url({{petshop.avatar_url}}) no-repeat center center /cover"></section>
         <section class="details">
@@ -20,6 +29,10 @@
                 </div>
             </div>
             <div class="item">
+                <div>Endereço</div>
+                <div>{{petshop.address}}</div>
+            </div>
+            <div class="item">
                 <div>Horário</div>
                 <div>{{petshop.hour}}</div>
             </div>
@@ -27,6 +40,5 @@
                 <div>E-mail</div>
                 <div>{{petshop.email}}</div>
             </div>
-
         </section>
     </form>

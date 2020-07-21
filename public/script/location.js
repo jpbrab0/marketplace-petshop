@@ -5,7 +5,7 @@ function UFs(){
            .then(res => res.json())
            .then(states => {
                for(state of states){
-                    ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
+                    ufSelect.innerHTML += `<option value="${state.sigla}">${state.nome}</option>`
                }
            })
     }

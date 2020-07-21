@@ -28,32 +28,20 @@ routes.get("/petshops/:id", (req, res) => {
 routes.get("/cadastro", (req, res) => {
     return res.render("cadastro")
 })
-routes.post("/petshops", (req, res) => {
-    const keys = Object.keys(req.body)
+routes.get("/contato/:id", (req, res) => {
+    const { id } = req.params
 
-    for(key of keys) {
-        if(req.body[key] == ''){
-            return res.send("Please, fill all fields")
-        }
+    const foundPetshop = data.petshops.find( (petshops) => {
+        return petshops.id == id
+    })
+    const petshop = {
+        ...foundPetshop,
+        
     }
-    let {name, avatar_url, description, email, hour} = req.body
+    if(!foundPetshop) return res.send("Petshop not found")
 
-    const id = Number(data.petshops.length + 1)
-
-    data.petshops.push({
-        id,
-        name,
-        avatar_url,
-        description,
-        email,
-        hour
-    })
-    fs.writeFile("data.json", JSON.stringify(data,null, 2), (err) => {
-        if(err){
-            return res.send("White file error... :(")
-        }
-        return res.redirect("/petshops")
-    })
+    return res.render("contato", { petshop })
 })
+routes.post("/petshops", petshops.post)
 
 module.exports = routes
