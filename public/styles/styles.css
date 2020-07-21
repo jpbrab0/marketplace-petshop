@@ -3,6 +3,9 @@
     padding: 0;
     border: none;
 }
+a{
+    text-decoration: none;
+}
 body{
     background-color: #f0f0f5;
     -webkit-font-smoothing:antialiased;
@@ -82,9 +85,10 @@ header .links button:hover{
     font-family: sans-serif;
 }
 .petshop{
+    text-align: center;
     cursor: pointer;
     background-color: rgb(233, 233, 233);
-    padding: 23px;
+    width: 80%;
     margin: 32px auto;
     transition: 0.2s;
 }
@@ -93,21 +97,22 @@ header .links button:hover{
     border-radius: 13px;
 }
 .petshop img{
-    max-width: 300px;
+    margin-top: 32px;
+    width: 50%;
     border-radius: 13px;
 }
 .petshop .description{
     margin: 32px auto;
 }
 /*CADASTRO*/
-form{
+.card{
     margin: 32px auto;
     display: grid;
     width: 70%;
     grid-template-columns: 1fr 1fr;
     background-color: #ffffff;
 }
-form h3{
+.card h3{
     color: #777;
     margin-bottom:23px ;
     font-family: sans-serif;

@@ -13,7 +13,7 @@
     </header>
     <section class="petshops">
         {% for petshop in petshops %}
-            <div class="petshop">
+            <div class="petshop" id="{{petshop.id}}">
                 <img src="{{petshop.avatar_url}}" alt="">
                 <div class="description">
                     <h2>{{petshop.name}}</h2>
@@ -24,4 +24,5 @@
             </div>
         {% endfor %}
     </section>
+    <script src="/script/redirect.js"></script>
 </body>
